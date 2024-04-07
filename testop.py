@@ -5,12 +5,14 @@ def distribute_shirts(shirt,bags):
     ListOfShirtInBags=[baseShirt]*bags
     for i in range(shirtLeft):
         ListOfShirtInBags[i]=ListOfShirtInBags[i]+1
-        deviation=max(ListOfShirtInBags)-min(ListOfShirtInBags)
+
+
+    deviation=max(ListOfShirtInBags)-min(ListOfShirtInBags)
     print(shirt,"list of bags:",ListOfShirtInBags,"deviation :",deviation)
 
 
 #Test cases
-distribute_shirts(93, 10)
+distribute_shirts(100, 10)
 distribute_shirts(151, 13)
 distribute_shirts(96, 5)
 distribute_shirts(93, 7)
@@ -18,10 +20,10 @@ distribute_shirts(101, 7)
 distribute_shirts(8, 12)
 distribute_shirts(4, 8)
 
-# print( "new test")
+print( "new test")
 # def distribute_shirts(shirt,bags):
 #     shirtList=[]
-#     if shirt%(bags-1)<shirt%bags:
+#     if shirt%(bags-1)<shirt%bags and shirt%(bags-1)!=0 and shirt%bags!=0:
 #         baseShirt=shirt//(bags-1)
 #         shirtList=[baseShirt]*(bags-1)
 #         shirtList.append(shirt%(bags-1))
@@ -40,3 +42,6 @@ distribute_shirts(4, 8)
 # distribute_shirts(101, 7)
 # distribute_shirts(8, 12)
 # distribute_shirts(4, 8)
+#
+# print('test')
+# distribute_shirts(100,6)
